@@ -1,0 +1,22 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#000;overflow:hidden;color:#fff}
+.stage{width:100vw;height:100vh;position:relative}
+.slide{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;background:#000}
+.slide.active{display:flex}
+.anim{opacity:0;transform:translateY(25px);animation:monter .5s ease forwards}
+@keyframes monter{to{opacity:1;transform:translateY(0)}}
+.d1{animation-delay:.1s}.d2{animation-delay:.4s}.d3{animation-delay:.7s}.d4{animation-delay:1s}.d5{animation-delay:1.3s}.d6{animation-delay:1.6s}
+.gold{color:#E8C46A}
+h1{font-size:42px;line-height:1.1;color:#fff}
+h1 span{color:#E8C46A}
+.badge{border:1px solid #E8C46A;color:#E8C46A;padding:8px 20px;border-radius:30px;font-weight:bold;letter-spacing:1px;margin-bottom:16px;background:transparent}
+.logo-top{width:140px;height:140px;object-fit:cover;border-radius:50%;border:4px solid #E8C46A;margin-bottom:14px}
+.logo-mini{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);font-size:13px;letter-spacing:3px;color:#E8C46A;font-weight:bold}
+.card{background:#111;width:92%;max-width:520px;padding:16px 20px;border-radius:16px;margin-top:12px;font-size:19px;display:flex;justify-content:space-between;border:1px solid #333;color:#fff}
+.card b{color:#E8C46A}
+.photo{width:220px;height:220px;object-fit:cover;border-radius:20px;border:4px solid #E8C46A;margin:14px 0}
+.progress{position:absolute;bottom:0;left:0;height:6px;background:#E8C46A;width:0%}
+.btn-wa{display:inline-block;background:#E8C46A;color:#000;padding:16px 30px;border-radius:30px;font-weight:900;font-size:20px;text-decoration:none;margin-top:18px}
+#entrer{position:fixed;inset:0;z-index:99;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;cursor:pointer}
+.img-entrer{width:140px;height:140px;object-fit:cover;border-radius:50%;border:4px solid #E8C46A;margin-bottom:16px}
+.btn-entrer{margin-top:30px;background:#E8C46A;color:#000;padding:16px 34px;border-radius:30px;font-weight:900;font-size:20px}

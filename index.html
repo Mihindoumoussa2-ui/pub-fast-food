@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAST-FOOD - Pub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="entrer" onclick="lancer()">
+  <img src="fond.jpg.jpeg" class="img-entrer">
+  <h2 class="gold" style="letter-spacing:5px">FAST-FOOD</h2>
+  <h1 style="margin-top:16px">Tu as faim ?<br><span>Commande en 1 clic.</span></h1>
+  <div class="btn-entrer">▶️ CLIQUEZ POUR VOIR</div>
+  <p style="margin-top:14px;color:#ccc">La voix va te présenter le menu</p>
+</div>
+
+<!-- SLIDE 0 - BOOST GABON PRESENTE -->
+<div class="slide">
+  <div class="badge">BOOST GABON</div>
+  <img src="boost.jpeg" class="logo-top">
+  <h1>L'agence BOOST GABON<br><span>vous présente</span></h1>
+  <p style="margin-top:14px;font-size:19px;color:#ccc">La Vitrine Digitale qu'elle a créée<br>pour un Fast-Food à Libreville</p>
+  <div class="logo-mini">BOOST GABON</div>
+</div>
+
+<div class="stage" id="stage">
+  <!-- 1 - ACCUEIL -->
+  <div class="slide active">
+    <img src="fond.jpg.jpeg" class="logo-top anim d1">
+    <h2 class="gold anim d2" style="letter-spacing:5px">FAST-FOOD • GABON</h2>
+    <h1 class="anim d3" style="margin-top:18px">Tu as faim ?<br><span>Commande en 1 clic.</span></h1>
+    <p class="anim d4" style="margin-top:12px;font-size:19px;color:#ccc">Frais & Gourmand • Ouvert 7j/7</p>
+    <div class="logo-mini">FAST-FOOD GABON</div>
+  </div>
+
+  <!-- 2 - MENU -->
+  <div class="slide">
+    <img src="fond.jpg.jpeg" class="logo-top anim d1">
+    <div class="badge anim d2">🔥 NOTRE MENU</div>
+    <h1 class="anim d3">Shawarma, Burgers,<br><span>Pizzas & Tacos.</span></h1>
+    <div class="card anim d4"><span>🍔 Burger Classique</span><b>3 500 F</b></div>
+    <div class="card anim d5"><span>🌯 Shawarma</span><b>3 000 F</b></div>
+    <div class="card anim d6"><span>🍕 Pizza</span><b>5 000 F</b></div>
+    <div class="logo-mini">FAST-FOOD GABON</div>
+  </div>
+
+  <!-- 3 - COMMANDE -->
+  <div class="slide">
+    <img src="fond.jpg.jpeg" class="logo-top anim d1">
+    <div class="badge anim d2">EN 1 CLIC - WHATSAPP</div>
+    <h1 class="anim d3">Tu choisis,<br><span>tu commandes.</span></h1>
+    <p class="anim d4" style="margin-top:16px;font-size:20px;line-height:1.6">Pas besoin d'appeler.<br>Pas besoin d'attendre.</p>
+    <p class="anim d5" style="font-size:20px;line-height:1.6">Tu cliques, ta commande est déjà prête sur WhatsApp.</p>
+    <div class="logo-mini">FAST-FOOD GABON</div>
+  </div>
+
+  <!-- 4 - LIVRAISON -->
+  <div class="slide">
+    <img src="fond.jpg.jpeg" class="logo-top anim d1">
+    <div class="badge anim d2">LIVRAISON RAPIDE</div>
+    <h1 class="anim d3">Chaud, rapide,<br><span>chez toi.</span></h1>
+    <p class="anim d4" style="margin-top:16px;font-size:20px;line-height:1.6">Libreville - Akanda<br>Ouvert 7j/7 de 10h à 23h</p>
+    <p class="anim d5" style="font-size:22px;margin-top:10px">⭐⭐⭐⭐⭐ 5.0 - Avis clients</p>
+    <p class="anim d6" style="font-size:18px;color:#ccc">"Très bon, livraison rapide !" - Ismael</p>
+    <div class="logo-mini">FAST-FOOD GABON</div>
+  </div>
+
+  <!-- 5 - FINAL + BOUTON -->
+  <div class="slide">
+    <img src="fond.jpg.jpeg" class="photo anim d1">
+    <h1 class="anim d2">Alors, on mange quoi<br><span>aujourd'hui ?</span></h1>
+    <a class="btn-wa anim d3" href="https://wa.me/212631844352?text=Bonjour%20FAST-FOOD%2C%20je%20veux%20commander%20!">📲 COMMANDER SUR WHATSAPP</a>
+    <p class="anim d4" style="margin-top:14px;font-size:18px;color:#ccc">📲 WhatsApp : +212 631 844 352</p>
+    <p class="anim d5" style="font-size:14px;color:#999;margin-top:8px">Vitrine créée par Boost Gabon</p>
+    <div class="logo-mini">FAST-FOOD GABON</div>
+  </div>
+
+  <div class="progress" id="bar"></div>
+</div>
+
+<audio id="voixAudio" src="voix-fastfood.mp3.mpeg" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
